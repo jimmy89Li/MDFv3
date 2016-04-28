@@ -120,6 +120,7 @@ header {
   img {
     width: auto;
     height: 30px;
+    padding-left: 15px;
   }
 }
 
@@ -130,8 +131,8 @@ header {
 }
 
 .logoBar {
-  max-width: 1200px;
-  width: $headerWidth;
+  max-width: 960px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -149,8 +150,10 @@ nav {
   }
 }
 .navbar {
-  margin-bottom: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 960px;
+  width: 100%;
 }
 .navbar-toggle {
   .icon-bar {
@@ -158,6 +161,9 @@ nav {
   }
   background-color: #d1d5d8;
   float: left;
+}
+.navbar-collapse {
+  padding: 0;
 }
 
 /* Banner section */
