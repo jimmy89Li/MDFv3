@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app>
+<html class="no-js" lang="en" ng-app="Shop">
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
@@ -33,7 +33,7 @@
   <script src="/bower_components/angular-route/angular-route.js"></script>
   <title>MDF Project - v3</title>
 </head>
-<body>{{1 + 1}}
+<body>
   <header>
     <div class="headerBar1">
       <div class="logoBar">
@@ -66,17 +66,30 @@
       </nav>
     </div>
   </header>
-  <section id="banner">
-    <img src="images/header.png">
-  </section>
+  <div id="banner">
+    <img src="images/header.png" alt="Header">
+  </div>
   <section id="tabs">
     <ul class="nav nav-tabs" data-tabs="tabs">
-      <li class="active" data-toggle="tab"><a href="#">Pink Shoes<br><span class="tabsUndertext">Now at $145,99</span></a></li>
-      <li><a href="#" data-toggle="tab">Anna Field<br><span class="tabsUndertext">Limited Edition</span></a></li>
-      <li><a href="#" data-toggle="tab">Prada<br><span class="tabsUndertext">Summer is coming</span></a></li>
-      <li><a href="#" data-toggle="tab">Casadei<br><span class="tabsUndertext">All Collors available</span></a></li>
-      <li><a href="#" data-toggle="tab">Mellow Yellow<br><span class="tabsUndertext">Free delivery</span></a></li>
+      <li class="active"><a data-toggle="tab" href="#tab1">Pink Shoes<br><span class="tabsUndertext">Now at $145,99</span></a></li>
+      <li><a data-toggle="tab" href="#tab2">Anna Field<br><span class="tabsUndertext">Limited Edition</span></a></li>
+      <li><a data-toggle="tab" href="#tab3">Prada<br><span class="tabsUndertext">Summer is coming</span></a></li>
+      <li><a data-toggle="tab" href="#tab4">Casadei<br><span class="tabsUndertext">All Collors available</span></a></li>
+      <li><a data-toggle="tab" href="#tab5">Mellow Yellow<br><span class="tabsUndertext">Free delivery</span></a></li>
     </ul>
-  </section>
+    <div class="underTabs tab-content">
+      <div id="tab1" class="TabImages tab-pane fade in active">
+        <img src="images/Tab1.png" alt="Image 1"/>
+        <img src="images/Tab2.png" alt="Image 2"/>
+      </div>
+      <div id="tab2" class="tab-pane fade"></div>
+      <div id="tab3" class="tab-pane fade"></div>
+      <div id="tab4" class="tab-pane fade"></div>
+      <div id="tab5" class="tab-pane fade"></div>
+    </div><!--UnderTabs-->
+  </section><!--Tabs-->
+  <div id="items">
+    
+  </div><!--Products-->
   </body>
 </html>

@@ -184,13 +184,32 @@ section#tabs {
 }
 .nav-tabs {
   li {
-    min-width: 125px;
+    min-width: 152px;
   }
   max-width: 760px;
   margin: 0 auto;
   width: auto;
   text-align: center;
+  border-bottom: 1px solid transparent;
 }
 span.tabsUndertext {
     font-size: 75%;
-} 
+}
+.underTabs{
+  min-height:230px;
+  background-color:#242424;
+}
+.TabImages {
+  img {
+    padding: 5px 38px;
+  }
+  max-width: 760px;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+  padding: 25px 0;
+}
+#items {
+  min-height: 600px;
+  background-color: #EBE7DF;
+}
