@@ -232,7 +232,7 @@ span.tabsUndertext {
   background-color: #EBE7DF;
 }
 
-.newArrivals {
+.Products {
   h4 {
     padding-left: 15px;
     text-align: left;
@@ -244,6 +244,24 @@ span.tabsUndertext {
   margin: 0 auto;
   padding-top: 30px;
   text-align: center;
+}
+.ProductsInfo {
+  div {
+    p:first-child {
+      padding-top: 30px;
+    }
+    p:last-child {
+      padding-bottom: 20px;
+    }
+    background-color: #DFDBD4;
+  }
+  max-width: 960px;
+  margin: 50px auto;
+  padding-top: 20px;
+  border-top: 1px solid gray;
+}
+.SmallInfo {
+  margin: 0 ;
 }
 
 
