@@ -2,10 +2,15 @@
 
 console.log('\'Allo \'Allo!');
 
-angular.module('Shop', []).controller('Tabs', ['$scope', function ($scope) {
-	$scope.tab = [{
+(function () {
+	var app = angular.module('store', []);
+	app.controller('StoreController', function () {
+		this.product = tab;
+	});
+
+	var tab = {
 		title: 'Pink Shoes',
-		subtitle: 'Now at  $145,99'
-	}];
-}]);
+		subtitle: 'Now at $145.99'
+	};
+})();
 //# sourceMappingURL=main.js.map
