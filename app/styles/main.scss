@@ -193,7 +193,7 @@ nav {
 
 /* Tabs section */
 div#tabs {
-    background-color: #464646;
+    background-color: $lightGray;
     margin: 0 auto;
     text-align: center;
 }
@@ -212,7 +212,7 @@ span.tabsUndertext {
 }
 .underTabs{
   min-height: 242px;
-  background-color: #242424;
+  background-color: $darkGray;
 }
 .TabImages {
   img {
@@ -229,7 +229,7 @@ span.tabsUndertext {
 
 #items {
   min-height: 600px;
-  background-color: #EBE7DF;
+  background-color: $itemsBGcolor;
 }
 
 .Products {
@@ -260,8 +260,28 @@ span.tabsUndertext {
   padding-top: 20px;
   border-top: 1px solid gray;
 }
-.SmallInfo {
-  margin: 0 ;
+
+/* Footer */
+footer {
+  .footer1 {
+    .widgets {
+      max-width: 960px;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 250px;
+    background-color: $darkGray;
+  }
+  .footer2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  min-height: 350px;
+  color: #fff;
+  background-color: $lightGray;
 }
 
 
