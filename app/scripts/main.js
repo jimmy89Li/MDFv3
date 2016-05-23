@@ -53,4 +53,37 @@ app.controller('BestItemsController', function(){
 	];
 	this.items = bestShoes;
 	});
+app.controller('AllProducts', function(){
+	var allShoes = [
+		{
+			name: 'Item 1',
+			image: 'images/item1.png'
+		}, {
+			name: 'Item 2',
+			image: 'images/item2.png'
+		}, {
+			name: 'Item 3',
+			image: 'images/item3.png'
+		}, {
+			name: 'Item 4',
+			image: 'images/item4.png'
+		}, {
+			name: 'Item 5',
+			image: 'images/item5.png'
+		}, {
+			name: 'Item 6',
+			image: 'images/item6.png'
+		}, {
+			name: 'Item 7',
+			image: 'images/item1.png'
+		}, {
+			name: 'Item 8',
+			image: 'images/item2.png'
+		}, {
+			name: 'Item 9',
+			image: 'images/item3.png'
+		}
+	];
+	this.items = allShoes;
+	});
 })();

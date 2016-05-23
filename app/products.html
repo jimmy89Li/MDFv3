@@ -50,49 +50,11 @@
     </div>
   </header>
   <div id="banner2" style="background-image: url(/images/header2.png)"></div>
-  <div id="tabs" data-ng-controller="StoreController as store"><!--Tabs Area-->
-    <ul class="nav nav-tabs" data-tabs="tabs">
-      <li class="active"><a data-toggle="tab" href="#tab1">{{store.products[0].title}}<br><span class="tabsUndertext">{{store.products[0].subtitle}}</span></a></li>
-      <li><a data-toggle="tab" href="#tab2">{{store.products[1].title}}<br><span class="tabsUndertext">{{store.products[1].subtitle}}</span></a></li>
-      <li><a data-toggle="tab" href="#tab3">{{store.products[2].title}}<br><span class="tabsUndertext">{{store.products[2].subtitle}}</span></a></li>
-      <li><a data-toggle="tab" href="#tab4">{{store.products[3].title}}<br><span class="tabsUndertext">{{store.products[3].subtitle}}</span></a></li>
-      <li><a data-toggle="tab" href="#tab5">{{store.products[4].title}}<br><span class="tabsUndertext">{{store.products[4].subtitle}}</span></a></li>
-    </ul>
-    <div class="underTabs tab-content">
-      <div id="tab1" class="TabImages tab-pane fade in active">
-        <img src="images/Tab1.png" alt="Image 1"/>
-        <img src="images/Tab2.png" alt="Image 2"/>
-      </div>
-      <div id="tab2" class="TabImages tab-pane fade">
-        <img src="images/Tab2.png" alt="Image 2"/>
-        <img src="images/Tab3.png" alt="Image 3"/>
-      </div>
-      <div id="tab3" class="TabImages tab-pane fade">
-        <img src="images/Tab1.png" alt="Image 1"/>
-        <img src="images/Tab3.png" alt="Image 3"/>
-      </div>
-      <div id="tab4" class="TabImages tab-pane fade">
-        <img src="images/Tab3.png" alt="Image 3"/>
-        <img src="images/Tab2.png" alt="Image 2"/>
-      </div>
-      <div id="tab5" class="TabImages tab-pane fade">
-        <img src="images/Tab2.png" alt="Image 2"/>
-        <img src="images/Tab1.png" alt="Image 1"/>
-      </div>
-    </div><!--UnderTabs-->
-  </div><!--/Tabs-->
-
   <section id="items"><!--Products Section-->
     <div class="container-fluid">
-    <div class="Products row" data-ng-controller="NewItemsListController as news">
-      <h4>New arrivals</h4>
-      <div class="col-sm-6 col-md-4" data-ng-repeat="item in news.items">
-        <img src="#" data-ng-src="{{item.image}}" alt="Product"/>
-      </div>
-    </div>
-    <div class="Products row" data-ng-controller="BestItemsController as bests">
-      <h4>Best sellers</h4>
-      <div class="col-sm-6 col-md-4" data-ng-repeat="item in bests.items">
+    <div class="Products row" data-ng-controller="AllProducts as all">
+      <h4>All products</h4>
+      <div class="col-sm-6 col-md-4" data-ng-repeat="item in all.items">
         <img src="#" data-ng-src="{{item.image}}" alt="Product"/>
       </div>
     </div>
