@@ -183,12 +183,25 @@ nav {
 
 /* Banner section */
 #banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  min-height: 400px;
   img {
     width: 100%;
   }
+}
+#banner2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
   width: 100%;
-  min-height: 200px;
-  max-height: 406abpx;
+  min-height: 250px;
+  max-height: 441px;
+  img {
+    width: 100%;
+  }
 }
 
 /* Tabs section */
@@ -291,5 +304,38 @@ footer {
     h4 {
       text-align: center;
     }
+  }
+  #banner {
+    min-height: 300px;
+  }
+  #banner2 {
+    min-height: 200px;
+  }
+}
+
+@media all and (max-width: 747px){
+  #banner {
+    min-height: 220px;
+  }
+  #banner2 {
+    min-height: 150px;
+  }
+}
+
+@media all and (max-width: 555px){
+  #banner {
+    min-height: 160px;
+  }
+  #banner2 {
+    min-height: 100px;
+  }
+}
+
+@media all and (max-width: 400px){
+  #banner {
+    min-height: 120px;
+  }
+  #banner2 {
+    min-height: 70px;
   }
 }
